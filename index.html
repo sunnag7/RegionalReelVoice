@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reel Voice over TTS Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0"
+        }
+      }
+    </script>
+    <style>
+      @keyframes bounce-custom {
+        0%, 75%, 100% {
+          transform: scaleY(0.4);
+        }
+        25% {
+          transform: scaleY(1.0);
+        }
+      }
+      .playing-animation span {
+        animation: bounce-custom 1.2s ease-in-out infinite;
+      }
+    </style>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-gray-900 text-white">
+    <div id="root"></div>
+    <script src="https://cdn.jsdelivr.net/npm/lamejs@1.2.1/lame.min.js"></script>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

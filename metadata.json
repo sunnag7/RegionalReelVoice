@@ -1,0 +1,5 @@
+{
+  "name": "Reel Voice over TTS Generator",
+  "description": "A web application that converts a Marathi script for a social media reel into speech using Google's Gemini TTS model. It allows users to generate and play high-quality audio from the provided text.",
+  "requestFramePermissions": []
+}
